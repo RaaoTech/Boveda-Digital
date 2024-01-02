@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bóveda Digital</title>
+
+    <!-- Estilos CSS para mejorar la presentación -->
+    <style>
+        /* Paleta de colores */
+        :root {
+            --color-primario: #777;
+            --color-primario-hover: #555;
+            --color-fondo: #333;
+            --color-borde: #ccc;
+            --color-texto: #333;
+            --color-boton-texto: #fff;
+            --color-aclaratoria: #555;
+        }
+
+        /* Estilos generales del cuerpo de la página */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+        }
+
+        /* Estilos para el contenedor principal */
+        .contain {
+            width: 80%;
+            max-width: 600px;
+            background-color: var(--color-primario);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+        }
+
+        /* Estilos para la cabecera */
+        header {
+            background-color: var(--color-primario-hover);
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        /* Estilos para el título principal */
+        h1 {
+            margin: 0;
+            color: var(--color-boton-texto);
+        }
+
+        /* Estilos para las secciones de la página */
+        section {
+            background-color: var(--color-fondo);
+            padding: 20px;
+            border: 1px solid var(--color-borde);
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        /* Estilos para la lista de navegación */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Estilos para los elementos de la lista */
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los enlaces */
+        a {
+            text-decoration: none;
+            color: var(--color-boton-texto);
+            padding: 10px 15px;
+            border: 1px solid var(--color-primario-hover);
+            border-radius: 4px;
+            background-color: var(--color-primario);
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Estilos para los enlaces al pasar el ratón */
+        a:hover {
+            background-color: var(--color-primario-hover);
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: var(--color-aclaratoria);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor principal de la página -->
+    <div class="contain">
+
+        <!-- Cabecera de la página -->
+        <header>
+            <!-- Título principal -->
+            <h1>Bóveda Digital</h1>
+        </header>
+
+        <!-- Sección principal del cuerpo de la página -->
+        <section>
+            <!-- Lista de elementos de navegación -->
+            <ul>
+                <!-- Enlace para ingresar a la bóveda -->
+                <li><a href="scripts/login_index.php">INGRESA A TU BÓVEDA</a></li>
+                <!-- Enlace para crear una nueva bóveda -->
+                <li><a href="scripts/registro.php">CREA TU BÓVEDA</a></li>
+            </ul>
+        </section>
+        
+        <!-- Pie de página -->
+        <footer>
+            <!-- Contenido del pie de página (actualmente vacío) -->
+        </footer>
+
+    </div>
+    
+</body>
+</html>
